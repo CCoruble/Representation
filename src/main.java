@@ -1,7 +1,6 @@
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.sparql.vocabulary.FOAF;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.vocabulary.VCARD;
 
@@ -16,6 +15,7 @@ import static org.apache.jena.vocabulary.RDF.predicate;
 public class main
 {
 	static final String inputFileName = "travail_1.xml";
+	static final String inputFileName2 = "travail_12.xml";
 	static final String herculeURI = "http://www.example.com/base#Hercule";
 
 	public static void main (String args[])
@@ -25,6 +25,7 @@ public class main
 
 		// use the FileManager to find the input file
 		InputStream in = FileManager.get().open(inputFileName);
+		InputStream in2 = FileManager.get().open(inputFileName2);
 		if (in == null)
 		{
 			throw new IllegalArgumentException("File: " + inputFileName + " not found");
@@ -32,33 +33,31 @@ public class main
 
 		// read the RDF/XML file
 		model.read(new InputStreamReader(in), "");
+		model.read(new InputStreamReader(in2), "");
 
-		// retrieve the Adam Smith vcard resource from the model
 		Resource hercule = model.getResource(herculeURI);
+		hercule.addProperty(VCARD.NICKNAME,"Heracles");
 
-		// retrieve the value of the N property
-		Resource name = (Resource) hercule.getRequiredProperty("name");
-				.getObject();
-		// retrieve the given name property
-		String fullName = hercule.getRequiredProperty(VCARD.FN)
-				.getString();
-		// add two nick name properties to vcard
-		hercule.addProperty(VCARD.NICKNAME, "Smithy")
-				.addProperty(VCARD.NICKNAME, "Adman");
+		Utils.printSpacer("#");
+		//<http://www.example.com/base#Hercule>
+		String sparql = "SELECT distinct ?a WHERE {?a ?b ?c}";
 
-		// set up the output
-		System.out.println("The nicknames of \"" + fullName + "\" are:");
-		// list the nicknames
-		StmtIterator iter = hercule.listProperties(VCARD.NICKNAME);
-		while (iter.hasNext())
+		Query qry = QueryFactory.create(sparql);
+		QueryExecution qe = QueryExecutionFactory.create(qry, model);
+		ResultSet rs = qe.execSelect();
+
+		while(rs.hasNext())
 		{
-			System.out.println("    " + iter.nextStatement().getObject()
-					.toString());
+			QuerySolution sol = rs.nextSolution();
+			RDFNode str = sol.get("?a");
+			Utils.print(str.toString());
 		}
+
+		qe.close();
+		Utils.printSpacer("#");	
 	}
 	public static void test(){
 		Utils.print("Debut test");
-
 		Utils.print("Fin test");
 	}
 }

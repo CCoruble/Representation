@@ -10,12 +10,12 @@
 	xmlns:properties="http://www.example.com/properties#"
 	xml:base="http://www.example.com/base">
 
-	<extypes:Demigod rdf:ID="Hercule">
+	<classes:Demigod rdf:ID="Hercule">
 		<foaf:name>Hercule</foaf:name>
 		<exterms:accomplish rdf:resource="http://www.example.com/base#Tache_1"/>
 		<exterms:son_of rdf:resource="http://www.example.com/base#Zeus"/>
 		<exterms:son_of rdf:resource="http://www.example.com/base#Alcmène"/>
-	</extypes:Demigod>
+	</classes:Demigod>
 
 	<extypes:Task rdf:ID="Tache_1">
 		<foaf:name>Tuer le lion de Némée</foaf:name>
