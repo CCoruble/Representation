@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Jena">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/apache-jena-3.7.0/src-examples" />
-    </SOURCES>
-  </library>
-</component>

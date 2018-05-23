@@ -1,3 +1,6 @@
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+
 import javax.annotation.Resource;
 import java.beans.Statement;
 import java.io.InputStream;

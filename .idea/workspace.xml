@@ -1,7 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84ca5429-4c3e-4c0e-abda-d33ae9f00d36" name="Default" comment="" />
+    <list default="true" id="84ca5429-4c3e-4c0e-abda-d33ae9f00d36" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Jena.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/NOTICE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/arq.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/infer.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/iri.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/juuid.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/nquads.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/ntriples.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/qparse.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfcat.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfcompare.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfcopy.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfdiff.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfparse.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rdfxml.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/riot.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rset.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rsparql.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/rupdate.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/schemagen.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/sparql.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbbackup.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbcompact.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbdump.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbloader.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbquery.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdb2_tdbupdate.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbbackup.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbdump.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbloader.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbquery.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbstats.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/tdbupdate.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/trig.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/turtle.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/uparse.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/update.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/utf8.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/wwwdec.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bat/wwwenc.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/arq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/infer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/iri" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/jena" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/juuid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/nquads" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/ntriples" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/qparse" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfcat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfcompare" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfcopy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfdiff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfparse" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rdfxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/riot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rset" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rsparql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/rupdate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/schemagen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/sparql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbbackup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbcompact" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbdump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbloader" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbquery" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdb2.tdbupdate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbbackup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbdump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbloader" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbloader2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbloader2common" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbloader2data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbloader2index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbquery" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbstats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/tdbupdate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/trig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/turtle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/uparse" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/update" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/utf8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/wwwdec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/bin/wwwenc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/jena-log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-arq-3.7.0-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-cmds-3.7.0-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-core-3.7.0-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-rdfconnection-3.7.0-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-tdb-3.7.0-sources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/collection-0.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/commons-cli-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/commons-codec-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/commons-csv-1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/commons-io-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/httpclient-4.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/httpclient-cache-4.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/httpcore-4.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jackson-annotations-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jackson-core-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jackson-databind-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-arq-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-base-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-cmds-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-core-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-dboe-base-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-dboe-index-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-dboe-trans-data-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-dboe-transaction-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-iri-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-rdfconnection-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-shaded-guava-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-tdb-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jena-tdb2-3.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/jsonld-java-0.11.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/libthrift-0.10.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/slf4j-log4j12-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/xercesImpl-2.11.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/lib/xml-apis-1.4.01.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/AlgebraEx.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/AlgebraExec.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExProg1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExProg2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExQuerySelect1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExQuerySelect2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExampleDBpedia1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExampleDBpedia2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/ExampleDBpedia3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/aggregates/CustomAggregate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/bgpmatching/OpExecutorAlt.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/bgpmatching/StageAltMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/bgpmatching/StageGeneratorAlt.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/constructquads/ExampleConstructQuads.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/engine/MyQueryEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/filter/classify.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/propertyfunction/labelSearch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/propertyfunction/localname.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/propertyfunction/uppercase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExJsonLD.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_4.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_5.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_6.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_7.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_RDFXML_ReaderProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_RDFXML_WriteProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_out1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_out2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/riot/ExRIOT_out3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/update/UpdateExecuteOperations.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/update/UpdateProgrammatic.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/arq/examples/update/UpdateReadFromFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/data/camera.owl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/data/eswc-2006-09-21.rdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/data/test1.owl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/data/test2.owl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/bin/get-data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/java/org/apache/jena/example/Base.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/java/org/apache/jena/example/CheeseBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/java/org/apache/jena/example/helloworld/HelloWorld.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/java/org/apache/jena/example/pizza/PizzaSparqlNoInf.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/resources/data/cheeses-0.1.ttl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/resources/data/pizza.owl.rdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/main/resources/ontologies/cheese.ttl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena-examples/src/test/java/org/apache/jena_examples/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/ontology/classHierarchy/ClassHierarchy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/ontology/classHierarchy/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/ontology/describeClass/DescribeClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/ontology/describeClass/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial01.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial02.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial03.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial04.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial05.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial06.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial07.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial08.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial09.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial10.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/jena/examples/rdf/Tutorial11.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExQuadFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB4.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB5.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB6.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB_Txn1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB_Txn2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apache-jena-3.7.0/src-examples/tdb/examples/ExTDB_Txn3.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Representation.iml" afterPath="$PROJECT_DIR$/Representation.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,12 +218,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,7 +234,7 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="85">
               <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
                 <element signature="e#103#104#0" expanded="true" />
@@ -87,10 +290,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenna_projet_SA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenna_projet_SA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="jenna_projet_SA" />
@@ -103,20 +328,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/truc à clovis/Dungeon_And_Dragons_V3_INCOMING" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apache-jena-3.7.0/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JAR Application.jena-core-3.7.0-sources.jar">
+  <component name="RunManager" selected="Application.App">
     <configuration default="false" name="jena-core-3.7.0-sources.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/apache-jena-3.7.0/lib-src/jena-core-3.7.0-sources.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
       <method />
     </configuration>
@@ -324,7 +552,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
+    <configuration default="false" name="App" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="main" />
       <option name="VM_PARAMETERS" value="" />
@@ -340,7 +568,7 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="JAR Application.jena-core-3.7.0-sources.jar" />
     </list>
     <recent_temporary>
@@ -364,35 +592,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -407,9 +635,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="85">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
           <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding>
             <element signature="e#103#104#0" expanded="true" />
@@ -422,14 +671,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -512,7 +760,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Jena</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
