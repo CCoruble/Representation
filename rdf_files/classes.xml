@@ -6,7 +6,12 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xml:base="http://www.example.com/classes#">
 	
-	<rdfs:Class rdf:ID="Beeing"/>
+	<rdfs:Class rdf:ID="Universal"/>
+	
+	<rdfs:Class rdf:ID="Beeing">
+		<rdfs:subClassOf rdf:resource="#Universal"/>
+	</rdfs:Class>
+	
 	
 	<rdfs:Class rdf:ID="Human">
 		<rdfs:subClassOf rdf:resource="#Beeing"/>
@@ -25,6 +30,8 @@
 		<rdfs:subClassOf rdf:resource="#Human"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:ID="Task"/>
+	<rdfs:Class rdf:ID="Task">
+		<rdfs:subClassOf rdf:resource="#Universal"/>
+	</rdfs:Class>
 
 </rdf:RDF>

@@ -6,6 +6,8 @@
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:exterms="http://www.example.com/terms/"
 	xmlns:extypes="http://www.example.com/types/"
+	xmlns:classes="http://www.example.com/classes#"
+	xmlns:properties="http://www.example.com/properties#"
 	xml:base="http://www.example.com/base">
 
 	<extypes:Task rdf:ID="Tache_12">
