@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:exterms="http://www.example.com/terms/"
+	xmlns:extypes="http://www.example.com/types/"
+	xml:base="http://www.example.com/base">
+
+	<extypes:Task rdf:ID="Tache_12">
+		<foaf:name>Ramener Cerbère</foaf:name>
+		<exterms:localisation>Enfer</exterms:localisation>
+		<exterms:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
+		<exterms:task_step rdf:resource="http://www.example.com/base#Etape_tache_12"/>
+	</extypes:Task>
+
+	<rdf:Description rdf:ID="Objectif_tache_12">
+		<exterms:requirements_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_12_1"/>
+				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_12_2"/>
+			</rdf:Bag>
+		</exterms:requirements_list>
+	</rdf:Description>
+
+	<extypes:Bring_back rdf:ID="Objectif_tache_12_1">
+		<exterms:concern rdf:resource="http://www.example.com/base#Cerbère"/>
+	</extypes:Bring_back>
+
+	<extypes:Do_not_hurt rdf:ID="Objectif_tache_12_2">
+		<exterms:concern rdf:resource="http://www.example.com/base#Cerbère"/>
+	</extypes:Do_not_hurt>
+
+	<extypes:Magical_beast rdf:ID="Cerbère">
+		<foaf:name>Cerbère</foaf:name>
+		<exterms:number_of_head>3</exterms:number_of_head>
+		<exterms:son_of rdf:resource="http://www.example.com/base#Hades"/>
+	</extypes:Magical_beast>
+
+	<rdf:Description rdf:ID="Etape_tache_12">
+		<exterms:step_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/exterms#Va_en_enfer"/>
+				<rdf:li rdf:resource="http://www.example.com/exterms#Parle_à_Hades"/>
+				<rdf:li rdf:resource="http://www.example.com/exterms#Dompte_Cerbère"/>
+			</rdf:Bag>
+		</exterms:step_list>
+	</rdf:Description>
+
+</rdf:RDF>
