@@ -6,9 +6,9 @@
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:classes="http://www.example.com/classes#"
 	xmlns:properties="http://www.example.com/properties#"
-	xml:base="http://www.example.com/base">
+	xml:base="http://www.example.com/base#">
 
-	<classes:Demigod rdf:ID="Hercule">
+	<classes:Demigod rdf:about="http://www.example.com/base#Hercule">
 		<foaf:name>Hercule</foaf:name>
 		<properties:accomplish rdf:resource="http://www.example.com/base#Tache_1"/>
 		<properties:son_of rdf:resource="http://www.example.com/base#Zeus"/>
@@ -18,13 +18,13 @@
 	<classes:Task rdf:ID="Tache_1">
 		<foaf:name>Tuer le lion de Némée</foaf:name>
 		<properties:requester rdf:resource="http://www.example.com/base#Euristhée"/>
-		<properties:task_reason rdf:resource="http://www.example.com/base#Raison_tache_1"/>
+		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_1"/>
 		<properties:localisation>Némée</properties:localisation>
-		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
+		<properties:requirements rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_1"/>
 	</classes:Task>
 
-	<rdf:Description rdf:ID="Raison_tache_1">
+	<classes:Task_reasons rdf:about="http://www.example.com/base#Raison_tache_1">
 		<properties:reasons_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Crimes_sur_les_villageois"/>
@@ -32,16 +32,16 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Moutons_des_bergers_locaux_mangés"/>
 			</rdf:Bag>
 		</properties:reasons_list>
-	</rdf:Description>
+	</classes:Task_reasons>
 
-	<rdf:Description rdf:ID="Objectif_tache_1">
+	<classes:Task_requirements rdf:ID="Objectif_tache_1">
 		<properties:requirements_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_1"/>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_2"/>
 			</rdf:Bag>
 		</properties:requirements_list>
-	</rdf:Description>
+	</classes:Task_requirements>
 
 	<classes:Goal rdf:ID="Objectif_tache_1_1">
 		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_Némée"/>
