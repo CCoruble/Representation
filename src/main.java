@@ -1,5 +1,7 @@
+import com.sun.deploy.util.*;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
+import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.FileManager;
 
 import java.io.File;
@@ -35,6 +37,7 @@ public class main
 			Utils.print("2: Sauvegarder le modèle");
 			Utils.print("3: Faire une requête sur le modèle");
 			Utils.print("4: Afficher le modèle complet");
+			Utils.print("5: Ajouter Triple");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -55,6 +58,9 @@ public class main
 
 				case 4:
 					printModel(model);
+					break;
+				case 5:
+					addTriple(model);
 					break;
 
 				default:
@@ -161,20 +167,68 @@ public class main
 		}
 	}
 
-	public static void addResource(Model model){
-		Utils.print("Indiquez l'URI de la ressource à ajouter.");
-		Utils.print("(Ne pas donnez la base 'http://www.example.com/base#')");
+	public static void addTriple(Model model){
+		Utils.print("Indiquez l'URI complète de la ressource à ajouter.");
+		Utils.print("pour un élément de notre base : base 'http://www.example.com/base#' + Item  ");
+		Utils.print("pour une classe : base 'http://www.example.com/classes#' + ClassName  ");
+		Utils.print("pour une propriété : base 'http://www.example.com/properties#' + PropertyName ");
 		String uri = InputFunction.getStringInput();
+		//Utils.print("debug: " + uri);
+		Resource resource = null;
+		Resource objet = null;
 
-		Resource resource = model.createResource(baseURI + uri);
+		if(!model.contains(model.getResource(uri), null ))
+		{
+			Utils.print("Creation de la ressource");
+			resource = model.createResource(uri);
+		}
+		else
+		{
+			Utils.print("ressource trouvée dans le modèle local");
+			resource = model.getResource(uri);
+		}
 
 		int choice;
 		Utils.print("1: Ajouter une propriété");
 		Utils.print("autre : Quitter");
 		choice = InputFunction.getIntInput();
 		while(choice == 1){
+			Property prop = null;
 			Utils.print("");
-			//resource.addProperty(,"retzertera");
+			Utils.print("Entrez l'URI de votre propriété");
+			uri = InputFunction.getStringInput();
+			//Utils.print("debug: " + uri);
+
+			if(!model.contains(null,model.getProperty(uri) ))
+			{
+				Utils.print("Creation de la propriété");
+				prop = model.createProperty(uri);
+			}
+			else
+			{
+				Utils.print("proposition trouvée dans le modèle local");
+				prop = model.getProperty(uri);
+			}
+
+			Utils.print("");
+			Utils.print("Entrez l'URI l'objet du triplet");
+			uri = InputFunction.getStringInput();
+			//Utils.print("debug: " + uri);
+
+			if(!model.contains(model.getResource(uri), null ))
+			{
+				Utils.print("Creation de la ressource");
+				objet = model.createResource(uri);
+			}
+			else
+			{
+				Utils.print("objet trouvé dans le modèle local");
+				objet = model.getResource(uri);
+			}
+
+
+			resource.addProperty(prop,objet);
+
 			Utils.print("1: Ajouter une propriété");
 			Utils.print("autre: Quitter");
 			choice = InputFunction.getIntInput();
