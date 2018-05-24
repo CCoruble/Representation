@@ -16,7 +16,7 @@
 		<properties:son_of rdf:resource="http://www.example.com/base#Alcmène"/>
 	</classes:Demigod>
 
-	<classes:Task rdf:ID="Tache_1">
+	<classes:Task rdf:about="Tache_1">
 		<foaf:name>Tuer le lion de Némée</foaf:name>
 		<properties:requester rdf:resource="http://www.example.com/base#Euristhée"/>
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_1"/>
@@ -35,7 +35,7 @@
 		</properties:composed_of>
 	</classes:Task_reasons>
 
-	<classes:Task_requirements rdf:ID="Objectif_tache_1">
+	<classes:Task_requirements rdf:about="Objectif_tache_1">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_1"/>
@@ -44,15 +44,15 @@
 		</properties:composed_of>
 	</classes:Task_requirements>
 
-	<classes:Goal rdf:ID="Objectif_tache_1_1">
+	<classes:Goal rdf:about="Objectif_tache_1_1">
 		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_Némée"/>
 	</classes:Goal>
 	
-	<classes:Goal rdf:ID="Objectif_tache_1_2">
+	<classes:Goal rdf:about="Objectif_tache_1_2">
 		<properties:rescue>Les otages</properties:rescue>
 	</classes:Goal>
 	
-	<classes:Taks_steps rdf:ID="Etape_tache_1">
+	<classes:Taks_steps rdf:about="Etape_tache_1">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#AttaqueStandard_Echoue"/>

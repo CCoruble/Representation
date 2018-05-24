@@ -40,7 +40,7 @@
   <rdfs:comment>Someone is the son of someone</rdfs:comment>
   <rdfs:domain rdf:resource="http://www.example.com/classes#Beeing"/>
   <rdfs:range rdf:resource="http://www.example.com/classes#Beeing"/>
-  <rdfs:subPropertyOf rdf:ressource="http://www.example.com/properties#descendant"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.example.com/properties#descendant"/>
 </rdfs:Property>
 
 <rdfs:Property rdf:about="daughter_of">
@@ -48,7 +48,7 @@
   <rdfs:comment>Someone is the daughter of someone</rdfs:comment>
   <rdfs:domain rdf:resource="http://www.example.com/classes#Beeing"/>
   <rdfs:range rdf:resource="http://www.example.com/classes#Beeing"/>
-  <rdfs:subPropertyOf rdf:ressource="http://www.example.com/properties#descendant"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.example.com/properties#descendant"/>
 </rdfs:Property>
 
 <rdfs:Property rdf:about="requests">

@@ -24,7 +24,7 @@
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Beast"/>
+	<rdfs:Class rdf:about="Beast">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 
@@ -65,7 +65,7 @@
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:ID="List">
+	<rdfs:Class rdf:about="List">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
