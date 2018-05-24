@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:classes="http://www.example.com/classes#"
+	xmlns:properties="http://www.example.com/properties#"
+	xml:base="http://www.example.com/base">
+
+	<classes:Task rdf:ID="Tache_12">
+		<foaf:name>Ramener Cerbère</foaf:name>
+		<properties:localisation>Enfer</properties:localisation>
+		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
+		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_12"/>
+	</classes:Task>
+
+	<rdf:Description rdf:ID="Objectif_tache_12">
+		<properties:requirements_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_12_1"/>
+			</rdf:Bag>
+		</properties:requirements_list>
+	</rdf:Description>
+
+	<classes:Goal rdf:ID="Objectif_tache_12_1">
+		<properties:bring_back rdf:resource="http://www.example.com/base#Cerbère"/>
+		<properties:do_not_hurt rdf:resource="http://www.example.com/base#Cerbère"/>
+	</classes:Goal>
+
+	<classes:Magical_beast rdf:ID="Cerbère">
+		<foaf:name>Cerbère</foaf:name>
+		<properties:number_of_head>3</properties:number_of_head>
+		<properties:son_of rdf:resource="http://www.example.com/base#Hades"/>
+	</classes:Magical_beast>
+
+	<rdf:Description rdf:ID="Etape_tache_12">
+		<properties:step_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/properties#Va_en_enfer"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Parle_à_Hades"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerbère"/>
+			</rdf:Bag>
+		</properties:step_list>
+	</rdf:Description>
+
+</rdf:RDF>

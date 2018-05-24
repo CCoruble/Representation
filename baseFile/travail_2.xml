@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:classes="http://www.example.com/classes#"
+	xmlns:properties="http://www.example.com/properties#"
+	xml:base="http://www.example.com/base">
+
+	<classes:Demigod rdf:ID="Hercule">
+		<foaf:name>Hercule</foaf:name>
+		<properties:accomplish rdf:resource="http://www.example.com/base#Tache_6"/>
+	</classes:Demigod>
+
+	<classes:Task rdf:ID="Tache_6">
+		<foaf:name>Tuer les oiseaux du lac de Stymphale</foaf:name>
+		<properties:requester rdf:resource="http://www.example.com/base#Euristhée"/>
+		<properties:task_reason rdf:resource="http://www.example.com/base#Raison_tache_6"/>
+		<properties:localisation rdf:resource="https://fr.wikipedia.org/wiki/Lac_Stymphale#/maplink/1"></properties:localisation>
+		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_6"/>
+		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_6"/>
+	</classes:Task>
+
+	<rdf:Description rdf:ID="Raison_tache_6">
+		<properties:reasons_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/properties#Empoisonnement_des_environs"/>
+			</rdf:Bag>
+		</properties:reasons_list>
+	</rdf:Description>
+
+	<rdf:Description rdf:ID="Objectif_tache_6">
+		<properties:requirements_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_6_1"/>
+			</rdf:Bag>
+		</properties:requirements_list>
+	</rdf:Description>
+
+	<properties:Goal rdf:ID="Objectif_tache_6_1">
+		<properties:kill rdf:resource="http://www.example.com/base#Hydre_de_Lerne"/>
+	</properties:Goal>
+	
+	<rdf:Description rdf:ID="Etape_tache_6">
+		<properties:step_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/properties#Se_proteger_les_voies_respiratoires"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Tirer_des_flèches_enflammées"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Couper_tete_hydre_sans_succès"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Demander_aide_à_Iolaos"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Couper_et_cotériser_les_tètes_qui_repoussent"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_flèche_dans_sang_hydre"/>
+			</rdf:Bag>
+		</properties:step_list>
+	</rdf:Description>
+
+</rdf:RDF>

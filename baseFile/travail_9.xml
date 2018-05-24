@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:classes="http://www.example.com/classes#"
+	xmlns:properties="http://www.example.com/properties#"
+	xml:base="http://www.example.com/base">
+
+	<classes:Task rdf:ID="Tache_9">
+		<foaf:name>Ramener la ceinture d’Hippolyte</foaf:name>
+		<properties:localisation>Themiscyra</properties:localisation>
+		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_9"/>
+		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_9"/>
+	</classes:Task>
+
+	<rdf:Description rdf:ID="Objectif_tache_9">
+		<properties:requirements_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_9_1"/>
+			</rdf:Bag>
+		</properties:requirements_list>
+	</rdf:Description>
+	
+	<classes:Goal rdf:ID="Objectif_tache_9_1">
+		<properties:bring_back rdf:resource="http://www.example.com/base#Belt_of_Hippolyta"/>
+	</classes:Goal>
+
+	<rdf:Description rdf:ID="Etape_tache_9">
+		<properties:step_list>
+			<rdf:Bag>
+				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_reine_Amazone"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Tue_reine_Amazone"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Recupère_la_ceinture"/>
+			</rdf:Bag>
+		</properties:step_list>
+	</rdf:Description>
+</rdf:RDF>

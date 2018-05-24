@@ -9,6 +9,9 @@ public class Utils
 		System.out.println(args);
 	}
 	public static void printSpacer(String arg){
-		System.out.println(arg + arg + arg + arg + arg + arg + arg + arg + arg + arg + arg + arg + arg + arg + arg);
+		String s = "";
+		for(int i = 0; i < 20; i++)
+			s += arg;
+		System.out.println(s);
 	}
 }

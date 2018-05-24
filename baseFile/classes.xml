@@ -12,7 +12,6 @@
 		<rdfs:subClassOf rdf:resource="#Universal"/>
 	</rdfs:Class>
 	
-	
 	<rdfs:Class rdf:ID="Human">
 		<rdfs:subClassOf rdf:resource="#Beeing"/>
 	</rdfs:Class>
@@ -31,6 +30,10 @@
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Task">
+		<rdfs:subClassOf rdf:resource="#Universal"/>
+	</rdfs:Class>
+	
+	<rdfs:Class rdf:ID="Goal">
 		<rdfs:subClassOf rdf:resource="#Universal"/>
 	</rdfs:Class>
 
