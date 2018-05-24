@@ -51,8 +51,8 @@
   <rdfs:subPropertyOf rdf:ressource="http://www.example.com/properties#descendant"/>
 </rdfs:Property>
 
-<rdfs:Property rdf:about="requester">
-  <rdfs:label xml:lang="en">requester</rdfs:label>
+<rdfs:Property rdf:about="requests">
+  <rdfs:label xml:lang="en">requests</rdfs:label>
   <rdfs:comment>Someone is the requester of a task</rdfs:comment>
   <rdfs:domain rdf:resource="http://www.example.com/classes#Beeing"/>
   <rdfs:range rdf:resource="http://www.example.com/classes#Task"/>
