@@ -21,7 +21,7 @@
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_1"/>
 		<properties:localisation>Némée</properties:localisation>
 		<properties:requirements rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
-		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_1"/>
+		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_1"/>
 	</classes:Task>
 
 	<classes:Task_reasons rdf:about="http://www.example.com/base#Raison_tache_1">
@@ -51,7 +51,7 @@
 		<properties:rescue>Les otages</properties:rescue>
 	</classes:Goal>
 	
-	<rdf:Description rdf:ID="Etape_tache_1">
+	<classes:Taks_steps rdf:ID="Etape_tache_1">
 		<properties:step_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#AttaqueStandard_Echoue"/>
@@ -61,6 +61,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Récupère_Peau"/>
 			</rdf:Bag>
 		</properties:step_list>
-	</rdf:Description>
+	</classes:Taks_steps>
 
 </rdf:RDF>

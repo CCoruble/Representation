@@ -22,27 +22,27 @@
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_6"/>
 	</classes:Task>
 
-	<rdf:Description rdf:ID="Raison_tache_6">
+	<classes:Task rdf:ID="Raison_tache_6">
 		<properties:reasons_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Empoisonnement_des_environs"/>
 			</rdf:Bag>
 		</properties:reasons_list>
-	</rdf:Description>
+	</classes:Task>
 
-	<rdf:Description rdf:ID="Objectif_tache_6">
+	<classes:Task_requirements rdf:ID="Objectif_tache_6">
 		<properties:requirements_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_6_1"/>
 			</rdf:Bag>
 		</properties:requirements_list>
-	</rdf:Description>
+	</classes:Task_requirements>
 
 	<properties:Goal rdf:ID="Objectif_tache_6_1">
 		<properties:kill rdf:resource="http://www.example.com/base#Hydre_de_Lerne"/>
 	</properties:Goal>
 	
-	<rdf:Description rdf:ID="Etape_tache_6">
+	<classes:Taks_steps rdf:ID="Etape_tache_6">
 		<properties:step_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_proteger_les_voies_respiratoires"/>
@@ -53,6 +53,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_flèche_dans_sang_hydre"/>
 			</rdf:Bag>
 		</properties:step_list>
-	</rdf:Description>
+	</classes:Taks_steps>
 
 </rdf:RDF>

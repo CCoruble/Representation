@@ -15,13 +15,13 @@
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_12"/>
 	</classes:Task>
 
-	<rdf:Description rdf:ID="Objectif_tache_12">
+	<classes:Task_requirements rdf:ID="Objectif_tache_12">
 		<properties:requirements_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_12_1"/>
 			</rdf:Bag>
 		</properties:requirements_list>
-	</rdf:Description>
+	</classes:Task_requirements>
 
 	<classes:Goal rdf:ID="Objectif_tache_12_1">
 		<properties:bring_back rdf:resource="http://www.example.com/base#Cerbère"/>
@@ -34,7 +34,7 @@
 		<properties:son_of rdf:resource="http://www.example.com/base#Hades"/>
 	</classes:Magical_beast>
 
-	<rdf:Description rdf:ID="Etape_tache_12">
+	<classes:Taks_steps rdf:ID="Etape_tache_12">
 		<properties:step_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Va_en_enfer"/>
@@ -42,6 +42,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerbère"/>
 			</rdf:Bag>
 		</properties:step_list>
-	</rdf:Description>
+	</classes:Taks_steps>
 
 </rdf:RDF>
