@@ -45,7 +45,7 @@
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="fictional location">
+	<rdfs:Class rdf:about="FictionalLocation">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Location"/>
 	</rdfs:Class>
 	
