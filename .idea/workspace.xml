@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84ca5429-4c3e-4c0e-abda-d33ae9f00d36" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Representation/main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rdf_files/classes.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rdf_files/properties.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/travail_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/travail_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/travail_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/travail_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/travail_9.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils.java" afterPath="$PROJECT_DIR$/src/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
-    </list>
+    <list default="true" id="84ca5429-4c3e-4c0e-abda-d33ae9f00d36" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +19,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="146" column="56" lean-forward="false" selection-start-line="146" selection-start-column="56" selection-end-line="146" selection-end-column="56" />
+            <state relative-caret-position="196">
+              <caret line="151" column="52" lean-forward="true" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3587#3588#0" expanded="true" />
@@ -810,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="146" column="56" lean-forward="false" selection-start-line="146" selection-start-column="56" selection-end-line="146" selection-end-column="56" />
+        <state relative-caret-position="196">
+          <caret line="151" column="52" lean-forward="true" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3587#3588#0" expanded="true" />
