@@ -9,32 +9,32 @@
 	<rdfs:Class rdf:ID="Universal"/>
 	
 	<rdfs:Class rdf:ID="Beeing">
-		<rdfs:subClassOf rdf:resource="#Universal"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Human">
-		<rdfs:subClassOf rdf:resource="#Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="God">
-		<rdfs:subClassOf rdf:resource="#Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Monster">
-		<rdfs:subClassOf rdf:resource="#Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Demigod">
-		<rdfs:subClassOf rdf:resource="#God"/>
-		<rdfs:subClassOf rdf:resource="#Human"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#God"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Human"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Task">
-		<rdfs:subClassOf rdf:resource="#Universal"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Goal">
-		<rdfs:subClassOf rdf:resource="#Universal"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
 </rdf:RDF>
