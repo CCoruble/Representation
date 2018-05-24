@@ -6,6 +6,7 @@
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:classes="http://www.example.com/classes#"
 	xmlns:properties="http://www.example.com/properties#"
+	xmlns:localisation="http://www.example.com/localisation#"
 	xml:base="http://www.example.com/base">
 
 	<classes:Demigod rdf:ID="Hercule">
@@ -17,7 +18,7 @@
 		<foaf:name>Tuer les oiseaux du lac de Stymphale</foaf:name>
 		<properties:requester rdf:resource="http://www.example.com/base#Euristhée"/>
 		<properties:task_reason rdf:resource="http://www.example.com/base#Raison_tache_6"/>
-		<properties:localisation rdf:resource="https://fr.wikipedia.org/wiki/Lac_Stymphale#/maplink/1"></properties:localisation>
+		<properties:is_localised rdf:resource="https://fr.wikipedia.org/wiki/Lac_Stymphale#/maplink/1"></properties:is_localised>
 		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_6"/>
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_6"/>
 	</classes:Task>
@@ -32,11 +33,11 @@
 	</classes:Task>
 
 	<classes:Task_requirements rdf:ID="Objectif_tache_6">
-		<properties:requirements_list>
+		<properties:require>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_6_1"/>
 			</rdf:Bag>
-		</properties:requirements_list>
+		</properties:require>
 	</classes:Task_requirements>
 
 	<classes:Goal rdf:ID="Objectif_tache_6_1">

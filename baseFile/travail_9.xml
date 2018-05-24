@@ -6,28 +6,29 @@
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:classes="http://www.example.com/classes#"
 	xmlns:properties="http://www.example.com/properties#"
+	xmlns:localisation="http://www.example.com/localisation#"
 	xml:base="http://www.example.com/base">
 
 	<classes:Task rdf:ID="Tache_9">
 		<foaf:name>Ramener la ceinture d’Hippolyte</foaf:name>
-		<properties:localisation>Themiscyra</properties:localisation>
+		<properties:is_localised>Themiscyra</properties:is_localised>
 		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_9"/>
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_9"/>
 	</classes:Task>
 
 	<classes:Task_requirements rdf:ID="Objectif_tache_9">
-		<properties:requirements_list>
+		<properties:require>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_9_1"/>
 			</rdf:Bag>
-		</properties:requirements_list>
+		</properties:require>
 	</classes:Task_requirements>
 	
 	<classes:Goal rdf:ID="Objectif_tache_9_1">
 		<properties:bring_back rdf:resource="http://www.example.com/base#Belt_of_Hippolyta"/>
 	</classes:Goal>
 
-	<classes:Taks_steps rdf:ID="Etape_tache_9">
+	<classes:Task_steps rdf:ID="Etape_tache_9">
 		<properties:step_list>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_reine_Amazone"/>

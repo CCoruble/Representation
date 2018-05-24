@@ -6,6 +6,7 @@
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:classes="http://www.example.com/classes#"
 	xmlns:properties="http://www.example.com/properties#"
+	xmlns:localisation="http://www.example.com/localisation#"
 	xml:base="http://www.example.com/base#">
 
 	<classes:Demigod rdf:about="http://www.example.com/base#Hercule">
@@ -19,8 +20,8 @@
 		<foaf:name>Tuer le lion de Némée</foaf:name>
 		<properties:requester rdf:resource="http://www.example.com/base#Euristhée"/>
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_1"/>
-		<properties:localisation>Némée</properties:localisation>
-		<properties:requirements rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
+		<properties:is_localised>Némée</properties:is_localised>
+		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
 		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_1"/>
 	</classes:Task>
 
@@ -34,14 +35,14 @@
 		</properties:reasons_list>
 	</classes:Task_reasons>
 
-	<classes:Task_requirements rdf:ID="Objectif_tache_1">
-		<properties:requirements_list>
+	<classes:Task_require rdf:ID="Objectif_tache_1">
+		<properties:require>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_1"/>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_2"/>
 			</rdf:Bag>
-		</properties:requirements_list>
-	</classes:Task_requirements>
+		</properties:require>
+	</classes:Task_require>
 
 	<classes:Goal rdf:ID="Objectif_tache_1_1">
 		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_Némée"/>

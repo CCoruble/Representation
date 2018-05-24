@@ -64,5 +64,9 @@
 	<rdfs:Class rdf:about="Taks_steps">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
+	
+	<rdfs:Class rdf:ID="List">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
+	</rdfs:Class>
 
 </rdf:RDF>
