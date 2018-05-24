@@ -23,20 +23,20 @@
 		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_6"/>
 	</classes:Task>
 
-	<classes:Task rdf:ID="Raison_tache_6">
-		<properties:reasons_list>
+	<classes:Task_reasons rdf:ID="Raison_tache_6">
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Empoisonnement_des_environs"/>
 			</rdf:Bag>
-		</properties:reasons_list>
-	</classes:Task>
+		</properties:composed_of>
+	</classes:Task_reasons>
 
 	<classes:Task_requirements rdf:ID="Objectif_tache_6">
-		<properties:require>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_6_1"/>
 			</rdf:Bag>
-		</properties:require>
+		</properties:composed_of>
 	</classes:Task_requirements>
 
 	<properties:Goal rdf:ID="Objectif_tache_6_1">
@@ -44,7 +44,7 @@
 	</properties:Goal>
 	
 	<classes:Taks_steps rdf:ID="Etape_tache_6">
-		<properties:step_list>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_proteger_les_voies_respiratoires"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Tirer_des_flèches_enflammées"/>
@@ -53,7 +53,7 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Couper_et_cotériser_les_tètes_qui_repoussent"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_flèche_dans_sang_hydre"/>
 			</rdf:Bag>
-		</properties:step_list>
+		</properties:composed_of>
 	</classes:Taks_steps>
 
 </rdf:RDF>

@@ -79,6 +79,11 @@
   <rdfs:range rdf:resource="http://www.example.com/classes#Location"/>
 </rdfs:Property>
 
-
+<rdfs:Property rdf:about="composed_of">
+  <rdfs:label xml:lang="en">Composed of</rdfs:label>
+  <rdfs:comment>Something is composed of something or a list of something</rdfs:comment>
+  <rdfs:domain rdf:resource="http://www.example.com/classes#Universal"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes#Universal"/>
+</rdfs:Property>
 
 </rdf:RDF>

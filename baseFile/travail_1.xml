@@ -26,23 +26,23 @@
 	</classes:Task>
 
 	<classes:Task_reasons rdf:about="http://www.example.com/base#Raison_tache_1">
-		<properties:reasons_list>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Crimes_sur_les_villageois"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Femmes_prises_en_otage"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Moutons_des_bergers_locaux_mangés"/>
 			</rdf:Bag>
-		</properties:reasons_list>
+		</properties:composed_of>
 	</classes:Task_reasons>
 
-	<classes:Task_require rdf:ID="Objectif_tache_1">
-		<properties:require>
+	<classes:Task_requirements rdf:ID="Objectif_tache_1">
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_1"/>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_1_2"/>
 			</rdf:Bag>
-		</properties:require>
-	</classes:Task_require>
+		</properties:composed_of>
+	</classes:Task_requirements>
 
 	<classes:Goal rdf:ID="Objectif_tache_1_1">
 		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_Némée"/>
@@ -53,7 +53,7 @@
 	</classes:Goal>
 	
 	<classes:Taks_steps rdf:ID="Etape_tache_1">
-		<properties:step_list>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#AttaqueStandard_Echoue"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_mains_nues"/>
@@ -61,7 +61,7 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Extrait_griffe"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Récupère_Peau"/>
 			</rdf:Bag>
-		</properties:step_list>
+		</properties:composed_of>
 	</classes:Taks_steps>
 
 </rdf:RDF>

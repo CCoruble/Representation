@@ -17,11 +17,11 @@
 	</classes:Task>
 
 	<classes:Task_requirements rdf:ID="Objectif_tache_9">
-		<properties:require>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/base#Objectif_tache_9_1"/>
 			</rdf:Bag>
-		</properties:require>
+		</properties:composed_of>
 	</classes:Task_requirements>
 	
 	<classes:Goal rdf:ID="Objectif_tache_9_1">
@@ -29,12 +29,12 @@
 	</classes:Goal>
 
 	<classes:Task_steps rdf:ID="Etape_tache_9">
-		<properties:step_list>
+		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_reine_Amazone"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Tue_reine_Amazone"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Recupère_la_ceinture"/>
 			</rdf:Bag>
-		</properties:step_list>
+		</properties:composed_of>
 	</classes:Taks_steps>
 </rdf:RDF>
