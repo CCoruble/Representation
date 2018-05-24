@@ -36,5 +36,9 @@
 	<rdfs:Class rdf:ID="Goal">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
+	
+	<rdfs:Class rdf:ID="List">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
+	</rdfs:Class>
 
 </rdf:RDF>

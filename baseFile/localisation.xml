@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF
+	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+	
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:classes="http://www.example.com/classes#"
+	xmlns:properties="http://www.example.com/properties#"
+	xml:base="http://www.example.com/localisation">
+
+	<classes:Location rdf:about="Némée">
+	</classes:Location>
+	
+	<classes:Location rdf:about="Stymphale">
+	</classes:Location>
+	
+	<classes:Location rdf:about="Lerne">
+	</classes:Location>
+	
+	<classes:FictionalLocation rdf:about="Themiscyra">
+	</classes:FictionalLocation>
+	
+
+</rdf:RDF>
