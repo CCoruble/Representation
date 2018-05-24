@@ -17,7 +17,6 @@ public class main
 {
 	static final String baseFileFolder = "./baseFile";
 	static final String baseURI = "http://www.example.com/base#";
-	static final String herculeURI = "http://www.example.com/base#Hercule";
 
 	public static void main (String args[])
 	{
