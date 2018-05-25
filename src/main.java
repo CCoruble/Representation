@@ -87,7 +87,7 @@ public class main
                     }
                     break;
                 case 12:
-                Set<String> coco =  RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
+                Set<String> coco = RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
                 for (String coke:coco)
                 {
                     Utils.print(coke);
