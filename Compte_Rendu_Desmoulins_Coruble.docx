@@ -1,9 +1,0 @@
-Compte rendu Projet web-sémantique
-
-Base de connaissance
-La base de connaissance utilisé dans notre projet porte sur les 12 travaux d’Hercule.
-Pour ne pas perdre trop de temps sur cette étape nous avons seulement représenté les travaux 1,2,6,9 et le 12.
-Grossièrement on trouve une ressource de type « Task » au centre qui représente la tâche que doit accomplir Hercule avec, potentiellement, les raisons de la demande de la tâche, le demandeur, les objectifs et les étapes.
-D’autre informations additionnels peuvent être présente.
-Manipulation base de connaissance
-Afin de faire 
