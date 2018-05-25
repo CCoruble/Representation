@@ -36,7 +36,7 @@
 		<properties:son_of rdf:resource="http://www.example.com/base#Hades"/>
 	</classes:Magical_beast>
 
-	<classes:Taks_steps rdf:about="Etape_tache_12">
+	<classes:Task_steps rdf:about="Etape_tache_12">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Va_en_enfer"/>
@@ -44,6 +44,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerbere"/>
 			</rdf:Bag>
 		</properties:composed_of>
-	</classes:Taks_steps>
+	</classes:Task_steps>
 
 </rdf:RDF>

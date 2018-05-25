@@ -45,7 +45,7 @@
 		<properties:kill rdf:resource="http://www.example.com/base#Oiseaux_du_lac"/>
 	</classes:Goal>
 	
-	<classes:Taks_steps rdf:about="Etape_tache_6">
+	<classes:Task_steps rdf:about="Etape_tache_6">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_faire_forger_des_battants_en_bronze_par_hephaistos"/>
@@ -55,6 +55,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Fuite_des_oiseaux"/>
 			</rdf:Bag>
 		</properties:composed_of>
-	</classes:Taks_steps>
+	</classes:Task_steps>
 
 </rdf:RDF>

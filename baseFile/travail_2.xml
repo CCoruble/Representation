@@ -43,7 +43,7 @@
 		<properties:kill rdf:resource="http://www.example.com/base#Hydre_de_Lerne"/>
 	</properties:Goal>
 	
-	<classes:Taks_steps rdf:about="Etape_tache_6">
+	<classes:Task_steps rdf:about="Etape_tache_6">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_proteger_les_voies_respiratoires"/>
@@ -54,6 +54,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_fleche_dans_sang_hydre"/>
 			</rdf:Bag>
 		</properties:composed_of>
-	</classes:Taks_steps>
+	</classes:Task_steps>
 
 </rdf:RDF>
