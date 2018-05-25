@@ -8,26 +8,26 @@
 	
 	<rdfs:Class rdf:about="Universal"/>
 	
-	<rdfs:Class rdf:about="Beeing">
+	<rdfs:Class rdf:about="Being">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Universal"/>
 		<rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/LivingThing100004258"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:about="Human">
-		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Being"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:about="God">
-		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Being"/>
 		<rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/Deity109505418"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:about="Monster">
-		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Being"/>
 	</rdfs:Class>
 
 	<rdfs:Class rdf:about="Beast">
-		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Beeing"/>
+		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Being"/>
 	</rdfs:Class>
 
 	<rdfs:Class rdf:about="Magical_beast">
