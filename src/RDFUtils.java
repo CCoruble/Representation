@@ -10,14 +10,14 @@ import java.io.PrintWriter;
 import java.util.*;
 import java.util.List;
 
-/**
- * @author Baptiste Michel
- */
+
 public class RDFUtils {
     private final static Logger logger = Logger.getLogger(RDFUtils.class);
 
     public final static String QUERY_PREFIXES = String.join("\n",
             "PREFIX owl: <http://www.w3.org/2002/07/owl#>",
+            "PREFIX classes <http://www.example.com/classes#>",
+            "PREFIX properties <http://www.example.com/properties#>",
             "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>",
             "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
             "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",

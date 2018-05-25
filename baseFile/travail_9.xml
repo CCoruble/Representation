@@ -5,7 +5,7 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:classes="http://www.example.com/classes#"
+	xmlns:classes="http://www.example.com/classes/"
 	xmlns:properties="http://www.example.com/properties#"
 	xmlns:localisation="http://www.example.com/localisation#"
 	xml:base="http://www.example.com/base">
@@ -34,7 +34,7 @@
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_reine_Amazone"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Tue_reine_Amazone"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Recupère_la_ceinture"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Recup%C3%A8re_la_ceinture"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Task_steps>
