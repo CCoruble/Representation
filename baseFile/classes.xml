@@ -10,6 +10,7 @@
 	
 	<rdfs:Class rdf:ID="Beeing">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
+		<rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/LivingThing100004258"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Human">
@@ -18,6 +19,7 @@
 	
 	<rdfs:Class rdf:ID="God">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
+		<rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/Deity109505418"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Monster">
@@ -35,6 +37,7 @@
 	<rdfs:Class rdf:ID="Demigod">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#God"/>
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Human"/>
+		<rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/Demigod110001764"/>
 	</rdfs:Class>
 	
 	<rdfs:Class rdf:ID="Task">
