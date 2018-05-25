@@ -1,4 +1,3 @@
-import com.sun.deploy.util.*;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdf.model.Property;
@@ -9,14 +8,29 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Created by Clovis on 23/05/2018.
  */
+
 public class main
 {
 	static final String baseFileFolder = "./baseFile";
 	static final String baseURI = "http://www.example.com/base#";
+
+    public final static String QUERY_PREFIXES = String.join("\n",
+            "PREFIX owl: <http://www.w3.org/2002/07/owl#>",
+            "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>",
+            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
+            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+            "PREFIX foaf: <http://xmlns.com/foaf/0.1/>",
+            "PREFIX dc: <http://purl.org/dc/elements/1.1/>",
+            "PREFIX : <http://dbpedia.org/resource/>",
+            "PREFIX dbpedia2: <http://dbpedia.org/property/>",
+            "PREFIX dbpedia: <http://dbpedia.org/>",
+            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>",
+            "");
 
 	public static void main (String args[])
 	{
@@ -38,6 +52,7 @@ public class main
 			Utils.print("4: Afficher le modèle complet");
 			Utils.print("5: Ajouter Triple");
             Utils.print("6: Rechercher les sous-classes");
+            Utils.print("7: Rechercher les ressources d'une classe et de ses sous-classes");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -63,11 +78,25 @@ public class main
 					addTriple(model);
 					break;
                 case 6:
+                    HashSet<String> listeDesSubclasses = new HashSet<String>();
                     Utils.print("nom de la classe ?");
                     String className = InputFunction.getStringInput();
-                    searchURIClassAmongSubclasses(model,className);
+                    searchClassAmongSubclasses(model,className,listeDesSubclasses);
+                    for (String subclasseName:listeDesSubclasses)
+                    {
+                        Utils.print(subclasseName);
+                    }
                     break;
-
+                case 7:
+                    HashSet<String> uriList = new HashSet<String>();
+                    Utils.print("nom de la classe ?");
+                    String classNameToURI = InputFunction.getStringInput();
+                    searchURIAmongSubclasses(model,classNameToURI,uriList);
+                    for (String subclassName:uriList)
+                    {
+                        Utils.print(subclassName);
+                    }
+                    break;
 				default:
 					return;
 			}
@@ -92,13 +121,50 @@ public class main
 		}
 	}
 
-	public static void searchURIClassAmongSubclasses(Model model,String mainClassName)
+    public static void searchURIAmongSubclasses(Model model, String mainClassName, HashSet<String> uriList){
+        HashSet<String> subclassesList = new HashSet<String>();
+	    searchClassAmongSubclasses(model, mainClassName,subclassesList);
+
+	    subclassesList.add(mainClassName);
+
+        for (String subclassName:subclassesList)
+        {
+
+            //pour chaque sous classe du sujet et de l'objet, effectuer la requète
+            QueryExecution qe = null;
+            String typeRdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+            String sparql = "SELECT distinct ?ressource WHERE {?ressource  a " + "<http://www.example.com/classes#"+subclassName + "> }";
+            //Utils.print("debug: " + sparql);
+
+            try
+            {
+                Query qry = QueryFactory.create(sparql);
+                qe = QueryExecutionFactory.create(qry, model);
+                ResultSet rs = qe.execSelect();
+
+                while(rs.hasNext() ) {
+                    QuerySolution qs = rs.next();
+                    Resource subclass = qs.getResource("ressource").asResource();
+                    //ajout de l'URI dans la liste
+                    if(!uriList.contains(subclass.getLocalName()))
+                        uriList.add(subclass.getLocalName());
+                }
+
+            } catch (Exception e){
+                Utils.print("Erreur dans la requête !");
+            } finally {
+                qe.close();
+            }
+        }
+    }
+
+	public static void searchClassAmongSubclasses(Model model, String mainClassName, HashSet<String> subclassesList)
     {
         //pour chaque sous classe du sujet et de l'objet, effectuer la requète
         QueryExecution qe = null;
         String typeRdfs = "<http://www.w3.org/2000/01/rdf-schema#";
         String sparql = "SELECT distinct ?subclass WHERE {?subclass " + typeRdfs + "subClassOf> " + "<http://www.example.com/classes#"+mainClassName + "> }";
-        Utils.print("debug: " + sparql);
+        //Utils.print("debug: " + sparql);
 
         try
         {
@@ -106,13 +172,12 @@ public class main
             qe = QueryExecutionFactory.create(qry, model);
             ResultSet rs = qe.execSelect();
 
-            Utils.print(ResultSetFormatter.asText(rs));
-
-            while (rs.hasNext() )
-            {
+            while(rs.hasNext() ) {
                 QuerySolution qs = rs.next();
                 Resource subclass = qs.getResource("subclass").asResource();
-                searchURIClassAmongSubclasses(model,subclass.getLocalName());
+                //Utils.print("debug subclass.localname() " + subclass.getLocalName());
+                subclassesList.add(subclass.getLocalName());
+                searchClassAmongSubclasses(model, subclass.getLocalName(),subclassesList);
             }
 
         } catch (Exception e){
