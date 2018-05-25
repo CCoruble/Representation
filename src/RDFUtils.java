@@ -176,48 +176,27 @@ public class RDFUtils {
 
         logger.info("Génération du contenu HTML...");
 
-        String content = null;
+        String content = "";
         for (String s : variables) {
             content += s + "\t";
         }
         Utils.print(content);
 
-        content = null;
+        content = "";
         int cnt = 1;
         for (Map<String, String> line : solutionMap) {
-            content += "<tr>";
-            content += "<td>" + cnt + "</td>";
+            content +=  cnt + "\t";
             cnt++;
             for (String s : variables) {
                 String val = line.get(s);
                 if (val == null)
                     val = "-";
-                content += "<td>";
-                if (val.startsWith("http://")) {
-                    content += "<a href=\"";
-                    content += val;
-                    content += "\">";
-                    content += StringEscapeUtils.escapeHtml4(val);
-                    content += "</a>";
-                } else
-                    content += StringEscapeUtils.escapeHtml4(val);
-                content += "</td>";
-            }
-            content += "</tr>";
-        }
-        content += "</tbody></table>";
-        try (PrintWriter out = new PrintWriter("query.html")) {
-            out.println(HTML_TEMPLATE.replace("%CONTENT%", content));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            Desktop.getDesktop().open(new File("query.html"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        logger.info("HTML généré avec succès.");
+                content += StringEscapeUtils.escapeHtml4(val) + "\t";
+            }
+            Utils.print(content);
+            content = "";
+        }
 
         return solutions;
     }
