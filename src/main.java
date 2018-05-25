@@ -152,6 +152,7 @@ public class main
 		Utils.print("Example: \"SELECT distinct * WHERE {?sujet ?predicat ?objet}\"");
 		sparql = InputFunction.getStringInput();
 
+
 		try
 		{
 			Query qry = QueryFactory.create(sparql);
