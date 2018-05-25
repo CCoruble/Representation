@@ -16,7 +16,7 @@
 
 	<classes:Task rdf:about="Tache_6">
 		<foaf:name>Tuer les oiseaux du lac de Stymphale</foaf:name>
-		<properties:requester rdf:resource="http://www.example.com/base#Euristh%C3%A9e"/>
+		<properties:requester rdf:resource="http://www.example.com/base#Euristhee"/>
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_6"/>
 		<properties:is_localised rdf:resource="https://fr.wikipedia.org/wiki/Lac_Stymphale#/maplink/1"></properties:is_localised>
 		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_6"/>
@@ -47,11 +47,11 @@
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_proteger_les_voies_respiratoires"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Tirer_des_fl%C3%A8ches_enflamm%C3%A9es"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Couper_tete_hydre_sans_succ%C3%A8s"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Demander_aide_%C3%A0_Iolaos"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Couper_et_cot%C3%A9riser_les_t%C3%A8tes_qui_repoussent"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_fl%C3%A8che_dans_sang_hydre"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Tirer_des_fleches_enflammees"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Couper_tete_hydre_sans_succes"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Demander_aide_a_Iolaos"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Couper_et_coteriser_les_tetes_qui_repoussent"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Tremper_fleche_dans_sang_hydre"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Taks_steps>

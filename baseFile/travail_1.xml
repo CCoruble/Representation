@@ -16,12 +16,12 @@
 		<rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Hercules"/>
 		<properties:accomplish rdf:resource="http://www.example.com/base#Tache_1"/>
 		<properties:son_of rdf:resource="http://www.example.com/base#Zeus"/>
-		<properties:son_of rdf:resource="http://www.example.com/base#Alcm%C3%A8ne"/>
+		<properties:son_of rdf:resource="http://www.example.com/base#Alcmene"/>
 	</classes:Demigod>
 
 	<classes:Task rdf:about="Tache_1">
 		<foaf:name>Tuer le lion de Némée</foaf:name>
-		<properties:requester rdf:resource="http://www.example.com/base#Euristh%C3%A9e"/>
+		<properties:requester rdf:resource="http://www.example.com/base#Euristhee"/>
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_1"/>
 		<properties:is_localised>Némée</properties:is_localised>
 		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_1"/>
@@ -33,7 +33,7 @@
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Crimes_sur_les_villageois"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Femmes_prises_en_otage"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Moutons_des_bergers_locaux_mang%C3%A9s"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Moutons_des_bergers_locaux_manges"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Task_reasons>
@@ -48,7 +48,7 @@
 	</classes:Task_requirements>
 
 	<classes:Goal rdf:about="Objectif_tache_1_1">
-		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_N%C3%A9m%C3%A9e"/>
+		<properties:kill rdf:resource="http://www.example.com/base#Lion_de_Nemee"/>
 	</classes:Goal>
 	
 	<classes:Goal rdf:about="Objectif_tache_1_2">
@@ -62,7 +62,7 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_mains_nues"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Etouffement_Lion"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Extrait_griffe"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#R%C3%A9cup%C3%A8re_Peau"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Recupere_Peau"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Taks_steps>

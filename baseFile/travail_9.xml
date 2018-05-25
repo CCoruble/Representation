@@ -34,7 +34,7 @@
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Attaque_reine_Amazone"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Tue_reine_Amazone"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Recup%C3%A8re_la_ceinture"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Recupere_la_ceinture"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Task_steps>

@@ -8,9 +8,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Clovis on 23/05/2018.
@@ -40,8 +38,8 @@ public class main
 			Utils.print("3: Faire une requête sur le modèle");
 			Utils.print("4: Afficher le modèle complet");
 			Utils.print("5: Ajouter Triple");
-            Utils.print("6: Rechercher les sous-classes");
-            Utils.print("7: Rechercher les ressources d'une classe et de ses sous-classes");
+            Utils.print("6: Rechercher les ressources d'une classe et de ses sous-classes");
+            Utils.print("7: Rechercher une ressource du modèle dans dbPedia");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -57,7 +55,7 @@ public class main
 					break;
 
 				case 3:
-					queryModel(model);
+					queryModel(model,false);
 					break;
 
 				case 4:
@@ -67,16 +65,6 @@ public class main
 					addTriple(model);
 					break;
                 case 6:
-                    HashSet<String> listeDesSubclasses = new HashSet<String>();
-                    Utils.print("nom de la classe ?");
-                    String className = InputFunction.getStringInput();
-                    searchClassAmongSubclasses(model,className,listeDesSubclasses);
-                    for (String subclasseName:listeDesSubclasses)
-                    {
-                        Utils.print(subclasseName);
-                    }
-                    break;
-                case 7:
                     HashSet<String> uriList = new HashSet<String>();
                     Utils.print("nom de la classe ?");
                     String classNameToURI = InputFunction.getStringInput();
@@ -85,6 +73,9 @@ public class main
                     {
                         Utils.print(subclassName);
                     }
+                    break;
+                case 7:
+                    queryModel(model,true);
                     break;
                 case 12:
                 Set<String> coco =  RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
@@ -122,6 +113,7 @@ public class main
 		}
 	}
 
+
     public static void searchURIAmongSubclasses(Model model, String mainClassName, HashSet<String> uriList){
         HashSet<String> subclassesList = new HashSet<String>();
 	    searchClassAmongSubclasses(model, mainClassName,subclassesList);
@@ -133,8 +125,7 @@ public class main
 
             //pour chaque sous classe du sujet et de l'objet, effectuer la requète
             QueryExecution qe = null;
-            String typeRdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-            String sparql = "SELECT distinct ?ressource WHERE {?ressource  a " + "<http://www.example.com/classes/"+subclassName + "> }";
+            String sparql = RDFUtils.QUERY_PREFIXES + "SELECT distinct ?ressource WHERE {?ressource  a classes:"+subclassName + " }";
             //Utils.print("debug: " + sparql);
 
             try
@@ -165,7 +156,7 @@ public class main
         QueryExecution qe = null;
         //String sparql = "SELECT distinct ?subclass WHERE {?subclass <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.com/classes/"+mainClassName + "> }";
         String sparql = RDFUtils.QUERY_PREFIXES + "SELECT distinct ?subclass WHERE {?subclass rdfs:subClassOf classes:"+mainClassName + " }";
-        Utils.print("debug: " + sparql);
+        //Utils.print("debug: " + sparql);
 
         try
         {
@@ -176,7 +167,7 @@ public class main
             while(rs.hasNext() ) {
                 QuerySolution qs = rs.next();
                 Resource subclass = qs.getResource("subclass").asResource();
-                Utils.print("debug subclass.localname() " + subclass.getLocalName());
+                //Utils.print("debug subclass.localname() " + subclass.getLocalName());
                 subclassesList.add(subclass.getLocalName());
                 searchClassAmongSubclasses(model, subclass.getLocalName(),subclassesList);
             }
@@ -245,10 +236,11 @@ public class main
 		model.write(System.out,"RDF/XML");
 	}
 
-	public static void queryModel(Model model){
+	public static HashSet<QuerySolution> queryModel(Model model,boolean queryDBPedia){
 		//<http://www.example.com/base#Hercule>
 		QueryExecution qe = null;
 		String sparql;
+		HashSet<QuerySolution> response = new HashSet<QuerySolution>();
 
 		Utils.print("Donnez votre requête SPARQL:");
 		Utils.print("Example: \"SELECT distinct * WHERE {?sujet ?predicat ?objet}\"");
@@ -257,11 +249,46 @@ public class main
 
 		try
 		{
-			Query qry = QueryFactory.create(sparql);
-			qe = QueryExecutionFactory.create(qry, model);
+            Query qry = QueryFactory.create(sparql);
+		    if(queryDBPedia)
+            {
+                qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qry);
+            }else
+            {
+                qe = QueryExecutionFactory.create(qry, model);
+            }
 			ResultSet rs = qe.execSelect();
 
-			Utils.print(ResultSetFormatter.asText(rs));
+            while(rs.hasNext() ) {
+                QuerySolution qs = rs.next();
+                response.add(qs);
+
+                if(qs.contains("seeAlso"))
+                {
+                    String[] params = new String[3];
+                    Iterator<String> it = qs.varNames();
+                    int i = 0;
+                    while(it.hasNext() && i < 3)
+                    {
+                        params[i] = it.next();
+                        i++;
+                    }
+                    try{
+                        sparql = RDFUtils.QUERY_PREFIXES + "SELECT * WHERE { "+ params[3] +" ?b ?c}";
+                        qry = QueryFactory.create(sparql);
+                        qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qry);
+                        ResultSet rs2 = qe.execSelect();
+                        while(rs2.hasNext() ) {
+                            QuerySolution qs2 = rs2.next();
+                            response.add(qs2);
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                        Utils.print("Erreur dans la requête vers dbPedia!");
+                    }
+                }
+            }
 
 		} catch (Exception e){
 			Utils.print("Erreur dans la requête !");
@@ -269,10 +296,9 @@ public class main
 			qe.close();
 		}
 
-        Utils.print("Fonction Bapt");
-        RDFUtils.executeAndDisplayUserQuery(model,sparql,true);
-
+        return response;
     }
+
 
 	public static void addTriple(Model model){
 		Utils.print("Indiquez l'URI complète de la ressource à ajouter.");

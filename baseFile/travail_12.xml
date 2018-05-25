@@ -11,7 +11,7 @@
 	xml:base="http://www.example.com/base">
 
 	<classes:Task rdf:about="Tache_12">
-		<foaf:name>Ramener Cerb%C3%A8re</foaf:name>
+		<foaf:name>Ramener Cerbère</foaf:name>
 		<properties:is_localised>Enfer</properties:is_localised>
 		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
 		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_12"/>
@@ -26,11 +26,11 @@
 	</classes:Task_requirements>
 
 	<classes:Goal rdf:about="Objectif_tache_12_1">
-		<properties:bring_back rdf:resource="http://www.example.com/base#Cerb%C3%A8re"/>
-		<properties:do_not_hurt rdf:resource="http://www.example.com/base#Cerb%C3%A8re"/>
+		<properties:bring_back rdf:resource="http://www.example.com/base#Cerbere"/>
+		<properties:do_not_hurt rdf:resource="http://www.example.com/base#Cerbere"/>
 	</classes:Goal>
 
-	<classes:Magical_beast rdf:about="Cerb%C3%A8re">
+	<classes:Magical_beast rdf:about="Cerbere">
 		<foaf:name>Cerbère</foaf:name>
 		<properties:number_of_head>3</properties:number_of_head>
 		<properties:son_of rdf:resource="http://www.example.com/base#Hades"/>
@@ -40,8 +40,8 @@
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Va_en_enfer"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Parle_%C3%A0_Hades"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerb%C3%A8re"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Parle_a_Hades"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerbere"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Taks_steps>

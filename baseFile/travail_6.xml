@@ -17,7 +17,7 @@
 
 	<classes:Task rdf:about="Tache_6">
 		<foaf:name>Tuer les oiseaux du lac de Stymphale</foaf:name>
-		<properties:requester rdf:resource="http://www.example.com/base#Euristh%C3%A9e"/>
+		<properties:requester rdf:resource="http://www.example.com/base#Euristhee"/>
 		<properties:reasons rdf:resource="http://www.example.com/base#Raison_tache_6"/>
 		<properties:is_localised rdf:resource="https://fr.wikipedia.org/wiki/Lac_Stymphale#/maplink/1"></properties:is_localised>
 		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_6"/>
@@ -27,7 +27,7 @@
 	<classes:Task_reasons rdf:about="Raison_tache_6">
 		<properties:composed_of>
 			<rdf:Bag>
-				<rdf:li rdf:resource="http://www.example.com/properties#Villageois_mang%C3%A9s"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Villageois_manges"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Destruction_des_cultures_locales"/>
 			</rdf:Bag>
 		</properties:composed_of>
@@ -51,7 +51,7 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Se_faire_forger_des_battants_en_bronze_par_hephaistos"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#frapper_les_battants"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#faire_peur_aux_oiseaux"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Abbatre_%C3%A0_l_arc_les_oiseaux"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Abbatre_a_l_arc_les_oiseaux"/>
 				<rdf:li rdf:resource="http://www.example.com/properties#Fuite_des_oiseaux"/>
 			</rdf:Bag>
 		</properties:composed_of>

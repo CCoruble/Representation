@@ -9,7 +9,7 @@
 	xmlns:properties="http://www.example.com/properties#"
 	xml:base="http://www.example.com/localisation">
 
-	<classes:Location rdf:about="N%C3%A9m%C3%A9e">
+	<classes:Location rdf:about="Nemee">
 	</classes:Location>
 	
 	<classes:Location rdf:about="Stymphale">
