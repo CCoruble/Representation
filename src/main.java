@@ -11,10 +11,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.*;
 
-/**
- * Created by Clovis on 23/05/2018.
- */
-
 public class main
 {
 	static final String baseFileFolder = "./baseFile";
@@ -63,7 +59,7 @@ public class main
 					printModel(model);
 					break;
 				case 5:
-					addTriple(model);
+					addTriplet(model);
 					break;
                 case 6:
                     HashSet<String> uriList = new HashSet<String>();
@@ -237,6 +233,7 @@ public class main
 		model.write(System.out,"RDF/XML");
 	}
 
+
 	public static HashSet<QuerySolution> queryModel(Model model,boolean queryDBPedia){
 		//<http://www.example.com/base#Hercule>
 		QueryExecution qe = null;
@@ -301,7 +298,7 @@ public class main
     }
 
 
-	public static void addTriple(Model model){
+	public static void addTriplet(Model model){
 		Utils.print("Indiquez l'URI complète de la ressource à ajouter.");
 		Utils.print("pour un élément de notre base : base 'http://www.example.com/base#' + Item  ");
 		Utils.print("pour une classe : base 'http://www.example.com/classes/' + ClassName  ");

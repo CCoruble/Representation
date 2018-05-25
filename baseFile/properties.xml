@@ -9,37 +9,37 @@
 
 <rdf:Property rdf:about="kill">
   <rdfs:label xml:lang="en">Kill</rdfs:label>
-  <rdfs:comment>The action of killing a beeing</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
-  <rdfs:range rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:comment>The action of killing a being</rdfs:comment>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes/Being"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="rescue">
   <rdfs:label xml:lang="en">Rescue</rdfs:label>
   <rdfs:comment>The action of rescuing sbdy</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
-  <rdfs:range rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes/Being"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="accomplish">
   <rdfs:label xml:lang="en">Accomplish</rdfs:label>
   <rdfs:comment>accomplish sth</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
   <rdfs:range rdf:resource="http://www.example.com/classes/Task"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="descendant">
   <rdfs:label xml:lang="en">Descendant</rdfs:label>
   <rdfs:comment>Someone is a descendant of someone</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
-  <rdfs:range rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes/Being"/>
 </rdf:Property>
 
 <rdfs:Property rdf:about="son_of">
   <rdfs:label xml:lang="en">Son of</rdfs:label>
   <rdfs:comment>Someone is the son of someone</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
-  <rdfs:range rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes/Being"/>
   <rdfs:subPropertyOf rdf:resource="http://www.example.com/properties#descendant"/>
   <rdfs:seeAlso rdf:resource="http://dbpedia.org/property/parents"/>
 </rdfs:Property>
@@ -47,8 +47,8 @@
 <rdfs:Property rdf:about="daughter_of">
   <rdfs:label xml:lang="en">Daughter of</rdfs:label>
   <rdfs:comment>Someone is the daughter of someone</rdfs:comment>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
-  <rdfs:range rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
+  <rdfs:range rdf:resource="http://www.example.com/classes/Being"/>
   <rdfs:subPropertyOf rdf:resource="http://www.example.com/properties#descendant"/>
 </rdfs:Property>
 
@@ -56,7 +56,7 @@
   <rdfs:label xml:lang="en">Requester</rdfs:label>
   <rdfs:comment>Someone is the requester of a task</rdfs:comment>
   <rdfs:range rdf:resource="http://www.example.com/classes/Task"/>
-  <rdfs:domain rdf:resource="http://www.example.com/classes/Beeing"/>
+  <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
 </rdfs:Property>
 
 <rdfs:Property rdf:about="reasons">
@@ -103,7 +103,7 @@
 
 <rdfs:Property rdf:about="number_of_head">
   <rdfs:label xml:lang="en">Number of head</rdfs:label>
-  <rdfs:comment>The number of head a beeing possess</rdfs:comment>
+  <rdfs:comment>The number of head a being possess</rdfs:comment>
   <rdfs:domain rdf:resource="http://www.example.com/classes/Being"/>
 </rdfs:Property>
 
