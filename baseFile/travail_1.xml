@@ -11,6 +11,8 @@
 
 	<classes:Demigod rdf:about="http://www.example.com/base#Hercule">
 		<foaf:name>Hercule</foaf:name>
+		<rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Heracles"/>
+		<rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Hercules"/>
 		<properties:accomplish rdf:resource="http://www.example.com/base#Tache_1"/>
 		<properties:son_of rdf:resource="http://www.example.com/base#Zeus"/>
 		<properties:son_of rdf:resource="http://www.example.com/base#Alcmène"/>
