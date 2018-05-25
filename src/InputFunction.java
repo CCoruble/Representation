@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class InputFunction {
 	private static final String confirmationWord = "oui";
-
+	private static Scanner scanner = new Scanner(System.in);
 	/**
 	 * Ask a string to user
 	 * and return it
 	 * @return String
 	 */
 	public static String getStringInput(){
-		Scanner scanner = new Scanner(System.in);
 		return scanner.nextLine();
 	}
 
@@ -24,7 +23,6 @@ public class InputFunction {
 	 * @return int
 	 */
 	public static int getIntInput(){
-		Scanner scanner = new Scanner(System.in);
 		int choice;
 		try {
 			choice = scanner.nextInt();
