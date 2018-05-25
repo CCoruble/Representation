@@ -12,8 +12,8 @@
 	<classes:Task rdf:about="Tache_12">
 		<foaf:name>Ramener Cerbère</foaf:name>
 		<properties:is_localised>Enfer</properties:is_localised>
-		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
-		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_12"/>
+		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
+		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_12"/>
 	</classes:Task>
 
 	<classes:Task_requirements rdf:about="Objectif_tache_12">

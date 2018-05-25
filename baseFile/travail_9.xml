@@ -12,8 +12,8 @@
 	<classes:Task rdf:about="Tache_9">
 		<foaf:name>Ramener la ceinture d’Hippolyte</foaf:name>
 		<properties:is_localised>Themiscyra</properties:is_localised>
-		<properties:task_requirement rdf:resource="http://www.example.com/base#Objectif_tache_9"/>
-		<properties:task_step rdf:resource="http://www.example.com/base#Etape_tache_9"/>
+		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_9"/>
+		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_9"/>
 	</classes:Task>
 
 	<classes:Task_requirements rdf:about="Objectif_tache_9">

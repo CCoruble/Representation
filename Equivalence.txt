@@ -1,0 +1,9 @@
+select distinct * where {<http://dbpedia.org/resource/Heracles> a ?object .} LIMIT 100
+=> <http://dbpedia.org/resource/Heracles> et Hercule
+=> <http://dbpedia.org/resource/Hercules> et Hercule
+=> http://dbpedia.org/class/yago/LivingThing100004258 et Beeing
+=> http://dbpedia.org/class/yago/Demigod110001764 et Demigod
+=> <http://dbpedia.org/resource/Zeus> et Zeus
+=> http://dbpedia.org/class/yago/Deity109505418 et God
+=> http://dbpedia.org/property/parents et son_of (parents représente les parents de la dite personne)
+=> 
