@@ -30,6 +30,7 @@ public class main
 		while(true)
 		{
 			Utils.printSpacer("#");
+			Utils.print("N'oubliez pas d'effectuer des requètes sur un modèle chargé (cf.Option 1)");
 			Utils.print("1: Charger un fichier dans le modèle");
 			Utils.print("2: Sauvegarder le modèle");
 			Utils.print("3: Faire une requête sur le modèle");
@@ -37,6 +38,8 @@ public class main
 			Utils.print("5: Ajouter Triple");
             Utils.print("6: Rechercher les ressources d'une classe et de ses sous-classes");
             Utils.print("7: Rechercher une ressource du modèle dans dbPedia");
+            Utils.print("8: Rechercher tous les see also d'une ressource dans le modèle et dans dbPedia");
+            Utils.print("9: Recupérer la propriété RDFS:comment liée à une ressource existant dans le modèle et liée à dbPedia");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -52,7 +55,10 @@ public class main
 					break;
 
 				case 3:
-					queryModel(model,false);
+                    Utils.print("Rentrez votre requète");
+                    Utils.print("example: SELECT distinct * WHERE {?sujet ?predicat ?objet}");
+                    String requete = InputFunction.getStringInput();
+                    RDFUtils.executeAndDisplayUserQuery(model,requete,false);
 					break;
 
 				case 4:
@@ -72,19 +78,32 @@ public class main
                     }
                     break;
                 case 7:
-                    queryModel(model,true);
+                    Utils.print("Rentrez votre requète");
+                    Utils.print("example: SELECT distinct * WHERE {<http://www.example.com/base#Hercule> ?predicat ?objet}");
+                    String requete1 = InputFunction.getStringInput();
+                    RDFUtils.executeAndDisplayUserQuery(model,requete1,true);
                     break;
-                case 12:
-                Set<String> coco = RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
-                for (String coke:coco)
-                {
-                    Utils.print(coke);
-                }
-                coco = RDFUtils.getPropertyValuesForUris(model,RDFS.comment,coco,true);
-                for (String coke:coco)
-                {
-                    Utils.print(coke);
-                }
+                case 8:
+                    Utils.print("Saisissez la ressource dont vous voulez les Propriétés (Transitivement)");
+                    Utils.print("example: http://www.example.com/base#Hercule");
+                    String requete2 = InputFunction.getStringInput();
+                    Set<String> coco = RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource(requete2) ,RDFS.seeAlso, true);
+                    for (String coke:coco)
+                    {
+                        Utils.print(coke);
+                    }
+                    break;
+                case 9:
+                    Utils.print("Saisissez la ressource dont vous voulez la propriété commentaire");
+                    Utils.print("example: http://www.example.com/base#Hercule");
+                    String requete3 = InputFunction.getStringInput();
+
+                    Set<String> coco2 = RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource(requete3) ,RDFS.seeAlso, true);
+                    coco2 = RDFUtils.getPropertyValuesForUris(model,RDFS.comment,coco2,true);
+                    for (String coke:coco2)
+                    {
+                        Utils.print(coke);
+                    }
                     break;
                 default:
                 return;
@@ -248,44 +267,18 @@ public class main
 		try
 		{
             Query qry = QueryFactory.create(sparql);
-		    if(queryDBPedia)
-            {
-                qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qry);
-            }else
-            {
+		    //if(queryDBPedia)
+            //{
+            //    qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qry);
+            //}else
+            //{
                 qe = QueryExecutionFactory.create(qry, model);
-            }
+            //}
 			ResultSet rs = qe.execSelect();
 
             while(rs.hasNext() ) {
                 QuerySolution qs = rs.next();
                 response.add(qs);
-
-                if(qs.contains("seeAlso"))
-                {
-                    String[] params = new String[3];
-                    Iterator<String> it = qs.varNames();
-                    int i = 0;
-                    while(it.hasNext() && i < 3)
-                    {
-                        params[i] = it.next();
-                        i++;
-                    }
-                    try{
-                        sparql = RDFUtils.QUERY_PREFIXES + "SELECT * WHERE { "+ params[3] +" ?b ?c}";
-                        qry = QueryFactory.create(sparql);
-                        qe = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qry);
-                        ResultSet rs2 = qe.execSelect();
-                        while(rs2.hasNext() ) {
-                            QuerySolution qs2 = rs2.next();
-                            response.add(qs2);
-                        }
-                    }
-                    catch(Exception e)
-                    {
-                        Utils.print("Erreur dans la requête vers dbPedia!");
-                    }
-                }
             }
 
 		} catch (Exception e){
