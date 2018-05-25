@@ -163,9 +163,9 @@ public class main
     {
         //pour chaque sous classe du sujet et de l'objet, effectuer la requète
         QueryExecution qe = null;
-        String typeRdfs = "<http://www.w3.org/2000/01/rdf-schema#";
-        String sparql = "SELECT distinct ?subclass WHERE {?subclass " + typeRdfs + "subClassOf> " + "<http://www.example.com/classes/"+mainClassName + "> }";
-        //Utils.print("debug: " + sparql);
+        //String sparql = "SELECT distinct ?subclass WHERE {?subclass <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.com/classes/"+mainClassName + "> }";
+        String sparql = RDFUtils.QUERY_PREFIXES + "SELECT distinct ?subclass WHERE {?subclass rdfs:subClassOf classes:"+mainClassName + " }";
+        Utils.print("debug: " + sparql);
 
         try
         {
@@ -176,7 +176,7 @@ public class main
             while(rs.hasNext() ) {
                 QuerySolution qs = rs.next();
                 Resource subclass = qs.getResource("subclass").asResource();
-                //Utils.print("debug subclass.localname() " + subclass.getLocalName());
+                Utils.print("debug subclass.localname() " + subclass.getLocalName());
                 subclassesList.add(subclass.getLocalName());
                 searchClassAmongSubclasses(model, subclass.getLocalName(),subclassesList);
             }
