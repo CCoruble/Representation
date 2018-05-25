@@ -4,6 +4,7 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.vocabulary.RDFS;
 
+import javax.rmi.CORBA.Util;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
