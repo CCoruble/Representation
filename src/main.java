@@ -37,6 +37,7 @@ public class main
 			Utils.print("3: Faire une requête sur le modèle");
 			Utils.print("4: Afficher le modèle complet");
 			Utils.print("5: Ajouter Triple");
+            Utils.print("6: Rechercher les sous-classes");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -61,6 +62,11 @@ public class main
 				case 5:
 					addTriple(model);
 					break;
+                case 6:
+                    Utils.print("nom de la classe ?");
+                    String className = InputFunction.getStringInput();
+                    searchURIClassAmongSubclasses(model,className);
+                    break;
 
 				default:
 					return;
@@ -85,6 +91,36 @@ public class main
 				break;
 		}
 	}
+
+	public static void searchURIClassAmongSubclasses(Model model,String mainClassName)
+    {
+        //pour chaque sous classe du sujet et de l'objet, effectuer la requète
+        QueryExecution qe = null;
+        String typeRdfs = "<http://www.w3.org/2000/01/rdf-schema#";
+        String sparql = "SELECT distinct ?subclass WHERE {?subclass " + typeRdfs + "subClassOf> " + "<http://www.example.com/classes#"+mainClassName + "> }";
+        Utils.print("debug: " + sparql);
+
+        try
+        {
+            Query qry = QueryFactory.create(sparql);
+            qe = QueryExecutionFactory.create(qry, model);
+            ResultSet rs = qe.execSelect();
+
+            Utils.print(ResultSetFormatter.asText(rs));
+
+            while (rs.hasNext() )
+            {
+                QuerySolution qs = rs.next();
+                Resource subclass = qs.getResource("subclass").asResource();
+                searchURIClassAmongSubclasses(model,subclass.getLocalName());
+            }
+
+        } catch (Exception e){
+            Utils.print("Erreur dans la requête !");
+        } finally {
+            qe.close();
+        }
+    }
 
 	public static void loadBaseFiles(Model model){
 		File folder = new File(baseFileFolder);

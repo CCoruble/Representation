@@ -6,66 +6,66 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xml:base="http://www.example.com/classes#">
 	
-	<rdfs:Class rdf:about="Universal"/>
+	<rdfs:Class rdf:ID="Universal"/>
 	
-	<rdfs:Class rdf:about="Beeing">
+	<rdfs:Class rdf:ID="Beeing">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="Human">
+	<rdfs:Class rdf:ID="Human">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="God">
+	<rdfs:Class rdf:ID="God">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="Monster">
+	<rdfs:Class rdf:ID="Monster">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Beast">
+	<rdfs:Class rdf:ID="Beast">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beeing"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Magical_beast">
+	<rdfs:Class rdf:ID="Magical_beast">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Beast"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="Demigod">
+	<rdfs:Class rdf:ID="Demigod">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#God"/>
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Human"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="Task">
+	<rdfs:Class rdf:ID="Task">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Location">
+	<rdfs:Class rdf:ID="Location">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="FictionalLocation">
+	<rdfs:Class rdf:ID="FictionalLocation">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Location"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="Goal">
+	<rdfs:Class rdf:ID="Goal">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Task_reasons">
+	<rdfs:Class rdf:ID="Task_reasons">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Task_requirements">
+	<rdfs:Class rdf:ID="Task_requirements">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Taks_steps">
+	<rdfs:Class rdf:ID="Taks_steps">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 	
-	<rdfs:Class rdf:about="List">
+	<rdfs:Class rdf:ID="List">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes#Universal"/>
 	</rdfs:Class>
 
