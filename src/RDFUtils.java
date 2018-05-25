@@ -153,12 +153,12 @@ public class RDFUtils {
         Query query = QueryFactory.create(queryString);
         QueryExecution qexec = isExt ? QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query) : QueryExecutionFactory.create(query, model);
 
-        List<String> head;
-        List<Map<String, String>> body = new ArrayList<>();
+        List<String> variables;
+        List<Map<String, String>> solutionMap = new ArrayList<>();
         List<QuerySolution> solutions = new ArrayList<>();
         try {
             ResultSet results = qexec.execSelect();
-            head = results.getResultVars();
+            variables = results.getResultVars();
             while (results.hasNext()) {
                 QuerySolution solution = results.next();
                 solutions.add(solution);
@@ -168,7 +168,7 @@ public class RDFUtils {
                     String s = it.next();
                     row.put(s, solution.get(s).toString());
                 }
-                body.add(row);
+                solutionMap.add(row);
             }
         } finally {
             qexec.close();
@@ -176,19 +176,19 @@ public class RDFUtils {
 
         logger.info("Génération du contenu HTML...");
 
-        String content = "<table class=\"table\"><thead><tr><th>#</th>";
-        for (String s : head) {
-            content += "<th>";
-            content += StringEscapeUtils.escapeHtml4(s);
-            content += "</th>";
+        String content = null;
+        for (String s : variables) {
+            content += s + "\t";
         }
-        content += "</tr></thead><tbody>";
+        Utils.print(content);
+
+        content = null;
         int cnt = 1;
-        for (Map<String, String> line : body) {
+        for (Map<String, String> line : solutionMap) {
             content += "<tr>";
             content += "<td>" + cnt + "</td>";
             cnt++;
-            for (String s : head) {
+            for (String s : variables) {
                 String val = line.get(s);
                 if (val == null)
                     val = "-";

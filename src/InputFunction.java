@@ -31,6 +31,7 @@ public class InputFunction {
 			return Integer.MAX_VALUE;
 		}
 		// Input parsing succeed, it means user entered an int
+		scanner.nextLine();
 		return choice;
 	}
 
