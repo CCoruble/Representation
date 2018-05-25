@@ -2,6 +2,7 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.RDFS;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,6 +10,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Clovis on 23/05/2018.
@@ -97,9 +99,21 @@ public class main
                         Utils.print(subclassName);
                     }
                     break;
-				default:
-					return;
-			}
+                case 12:
+                Set<String> coco =  RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
+                for (String coke:coco)
+                {
+                    Utils.print(coke);
+                }
+                coco = RDFUtils.getPropertyValuesForUris(model,RDFS.comment,coco,true);
+                for (String coke:coco)
+                {
+                    Utils.print(coke);
+                }
+                    break;
+                default:
+                return;
+            }
 		}
 	}
 
@@ -251,7 +265,7 @@ public class main
 
 		Utils.print("Donnez votre requête SPARQL:");
 		Utils.print("Example: \"SELECT distinct * WHERE {?sujet ?predicat ?objet}\"");
-		sparql = InputFunction.getStringInput();
+		sparql = RDFUtils.QUERY_PREFIXES + InputFunction.getStringInput();
 
 
 		try
@@ -261,12 +275,17 @@ public class main
 			ResultSet rs = qe.execSelect();
 
 			Utils.print(ResultSetFormatter.asText(rs));
+
 		} catch (Exception e){
 			Utils.print("Erreur dans la requête !");
 		} finally {
 			qe.close();
 		}
-	}
+
+        Utils.print("Fonction Bapt");
+        RDFUtils.executeAndDisplayUserQuery(model,sparql,true);
+
+    }
 
 	public static void addTriple(Model model){
 		Utils.print("Indiquez l'URI complète de la ressource à ajouter.");

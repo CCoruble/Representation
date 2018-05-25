@@ -41,7 +41,7 @@
   <rdfs:domain rdf:resource="http://www.example.com/classes#Beeing"/>
   <rdfs:range rdf:resource="http://www.example.com/classes#Beeing"/>
   <rdfs:subPropertyOf rdf:resource="http://www.example.com/properties#descendant"/>
-  <rdfs:seeAlso rdf:resource="http://dbpedia.org/class/yago/http://dbpedia.org/property/parents"/>
+  <rdfs:seeAlso rdf:resource="http://dbpedia.org/property/parents"/>
 </rdfs:Property>
 
 <rdfs:Property rdf:ID="daughter_of">
