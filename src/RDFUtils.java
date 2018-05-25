@@ -29,20 +29,6 @@ public class RDFUtils {
             "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>",
             "");
 
-    private final static String HTML_TEMPLATE = "<!DOCTYPE html>\n" +
-            "<html>\n" +
-            "<head>\n" +
-            "<meta charset=\"UTF-8\">\n" +
-            "<title>Query Results</title>\n" +
-            "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" integrity=\"sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB\" crossorigin=\"anonymous\">\n" +
-            "</head>\n" +
-            "\n" +
-            "<body>\n" +
-            "%CONTENT%" +
-            "</body>\n" +
-            "\n" +
-            "</html>";
-
     private static boolean isInteger(String s) {
         try {
             Integer.parseInt(s);

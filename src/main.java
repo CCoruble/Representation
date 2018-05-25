@@ -30,6 +30,7 @@ public class main
 		while(true)
 		{
 			Utils.printSpacer("#");
+			Utils.print("N'oubliez pas d'effectuer des requètes sur un modèle chargé (cf.Option 1)");
 			Utils.print("1: Charger un fichier dans le modèle");
 			Utils.print("2: Sauvegarder le modèle");
 			Utils.print("3: Faire une requête sur le modèle");
@@ -37,6 +38,8 @@ public class main
 			Utils.print("5: Ajouter Triple");
             Utils.print("6: Rechercher les ressources d'une classe et de ses sous-classes");
             Utils.print("7: Rechercher une ressource du modèle dans dbPedia");
+            Utils.print("8: Rechercher tous les see also d'une ressource dans le modèle et dans dbPedia");
+            Utils.print("9: Recupérer la propriété RDFS:comment liée à une ressource existant dans le modèle et liée à dbPedia");
 			Utils.print("Autre: Quitter");
 			Utils.printSpacer("#");
 			int choice = InputFunction.getIntInput();
@@ -76,6 +79,7 @@ public class main
                     break;
                 case 7:
                     Utils.print("Rentrez votre requète");
+                    Utils.print("example: SELECT distinct * WHERE {<http://www.example.com/base#Hercule> ?predicat ?objet}");
                     String requete1 = InputFunction.getStringInput();
                     RDFUtils.executeAndDisplayUserQuery(model,requete1,true);
                     break;
@@ -90,9 +94,10 @@ public class main
                     }
                     break;
                 case 9:
-                    Utils.print("Saisissez la ressource dont vous voulez les Propriétés (Transitivement)");
+                    Utils.print("Saisissez la ressource dont vous voulez la propriété commentaire");
                     Utils.print("example: http://www.example.com/base#Hercule");
                     String requete3 = InputFunction.getStringInput();
+
                     Set<String> coco2 = RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource(requete3) ,RDFS.seeAlso, true);
                     coco2 = RDFUtils.getPropertyValuesForUris(model,RDFS.comment,coco2,true);
                     for (String coke:coco2)
