@@ -55,7 +55,7 @@
 		<properties:rescue>Les otages</properties:rescue>
 	</classes:Goal>
 	
-	<classes:Taks_steps rdf:about="Etape_tache_1">
+	<classes:Task_steps rdf:about="Etape_tache_1">
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#AttaqueStandard_Echoue"/>
@@ -65,6 +65,6 @@
 				<rdf:li rdf:resource="http://www.example.com/properties#Recupere_Peau"/>
 			</rdf:Bag>
 		</properties:composed_of>
-	</classes:Taks_steps>
+	</classes:Task_steps>
 
 </rdf:RDF>

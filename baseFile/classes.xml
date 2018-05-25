@@ -64,7 +64,7 @@
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Universal"/>
 	</rdfs:Class>
 
-	<rdfs:Class rdf:about="Taks_steps">
+	<rdfs:Class rdf:about="Task_steps">
 		<rdfs:subClassOf rdf:resource="http://www.example.com/classes/Universal"/>
 	</rdfs:Class>
 	
