@@ -2,6 +2,7 @@ import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.RDFS;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,6 +10,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Clovis on 23/05/2018.
@@ -19,19 +21,6 @@ public class main
 	static final String baseFileFolder = "./baseFile";
 	static final String baseURI = "http://www.example.com/base#";
 
-    public final static String QUERY_PREFIXES = String.join("\n",
-            "PREFIX owl: <http://www.w3.org/2002/07/owl#>",
-            "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>",
-            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
-            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
-            "PREFIX foaf: <http://xmlns.com/foaf/0.1/>",
-            "PREFIX dc: <http://purl.org/dc/elements/1.1/>",
-            "PREFIX : <http://dbpedia.org/resource/>",
-            "PREFIX dbpedia2: <http://dbpedia.org/property/>",
-            "PREFIX dbpedia: <http://dbpedia.org/>",
-            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>",
-            "");
-
 	public static void main (String args[])
 	{
 		// Create an empty model
@@ -41,7 +30,7 @@ public class main
 		//hercule.addProperty(VCARD.NICKNAME,"Heracles");
 
 		//Utils.print(model.getProperty("rdf:type").getURI());
-		//Utils.print(model.getProperty("http://www.example.com/properties#son_of").getLocalName());
+		//Utils.print(model.getProperty("http://www.example.com/properties/son_of").getLocalName());
 
 		while(true)
 		{
@@ -97,9 +86,21 @@ public class main
                         Utils.print(subclassName);
                     }
                     break;
-				default:
-					return;
-			}
+                case 12:
+                Set<String> coco =  RDFUtils.getPropertyValuesForResourceTransitive(model, model.getResource("http://www.example.com/base#Hercule") ,RDFS.seeAlso, true);
+                for (String coke:coco)
+                {
+                    Utils.print(coke);
+                }
+                coco = RDFUtils.getPropertyValuesForUris(model,RDFS.comment,coco,true);
+                for (String coke:coco)
+                {
+                    Utils.print(coke);
+                }
+                    break;
+                default:
+                return;
+            }
 		}
 	}
 
@@ -133,7 +134,7 @@ public class main
             //pour chaque sous classe du sujet et de l'objet, effectuer la requète
             QueryExecution qe = null;
             String typeRdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#";
-            String sparql = "SELECT distinct ?ressource WHERE {?ressource  a " + "<http://www.example.com/classes#"+subclassName + "> }";
+            String sparql = "SELECT distinct ?ressource WHERE {?ressource  a " + "<http://www.example.com/classes/"+subclassName + "> }";
             //Utils.print("debug: " + sparql);
 
             try
@@ -163,7 +164,7 @@ public class main
         //pour chaque sous classe du sujet et de l'objet, effectuer la requète
         QueryExecution qe = null;
         String typeRdfs = "<http://www.w3.org/2000/01/rdf-schema#";
-        String sparql = "SELECT distinct ?subclass WHERE {?subclass " + typeRdfs + "subClassOf> " + "<http://www.example.com/classes#"+mainClassName + "> }";
+        String sparql = "SELECT distinct ?subclass WHERE {?subclass " + typeRdfs + "subClassOf> " + "<http://www.example.com/classes/"+mainClassName + "> }";
         //Utils.print("debug: " + sparql);
 
         try
@@ -251,7 +252,7 @@ public class main
 
 		Utils.print("Donnez votre requête SPARQL:");
 		Utils.print("Example: \"SELECT distinct * WHERE {?sujet ?predicat ?objet}\"");
-		sparql = InputFunction.getStringInput();
+		sparql = RDFUtils.QUERY_PREFIXES + InputFunction.getStringInput();
 
 
 		try
@@ -261,18 +262,23 @@ public class main
 			ResultSet rs = qe.execSelect();
 
 			Utils.print(ResultSetFormatter.asText(rs));
+
 		} catch (Exception e){
 			Utils.print("Erreur dans la requête !");
 		} finally {
 			qe.close();
 		}
-	}
+
+        Utils.print("Fonction Bapt");
+        RDFUtils.executeAndDisplayUserQuery(model,sparql,true);
+
+    }
 
 	public static void addTriple(Model model){
 		Utils.print("Indiquez l'URI complète de la ressource à ajouter.");
 		Utils.print("pour un élément de notre base : base 'http://www.example.com/base#' + Item  ");
-		Utils.print("pour une classe : base 'http://www.example.com/classes#' + ClassName  ");
-		Utils.print("pour une propriété : base 'http://www.example.com/properties#' + PropertyName ");
+		Utils.print("pour une classe : base 'http://www.example.com/classes/' + ClassName  ");
+		Utils.print("pour une propriété : base 'http://www.example.com/properties/' + PropertyName ");
 		String uri = InputFunction.getStringInput();
 		//Utils.print("debug: " + uri);
 		Resource resource = null;

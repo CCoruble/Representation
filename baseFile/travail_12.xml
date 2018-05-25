@@ -3,14 +3,15 @@
 	[<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:classes="http://www.example.com/classes#"
+	xmlns:classes="http://www.example.com/classes/"
 	xmlns:properties="http://www.example.com/properties#"
 	xmlns:localisation="http://www.example.com/localisation#"
 	xml:base="http://www.example.com/base">
 
 	<classes:Task rdf:about="Tache_12">
-		<foaf:name>Ramener Cerbère</foaf:name>
+		<foaf:name>Ramener Cerb%C3%A8re</foaf:name>
 		<properties:is_localised>Enfer</properties:is_localised>
 		<properties:require rdf:resource="http://www.example.com/base#Objectif_tache_12"/>
 		<properties:steps rdf:resource="http://www.example.com/base#Etape_tache_12"/>
@@ -25,11 +26,11 @@
 	</classes:Task_requirements>
 
 	<classes:Goal rdf:about="Objectif_tache_12_1">
-		<properties:bring_back rdf:resource="http://www.example.com/base#Cerbère"/>
-		<properties:do_not_hurt rdf:resource="http://www.example.com/base#Cerbère"/>
+		<properties:bring_back rdf:resource="http://www.example.com/base#Cerb%C3%A8re"/>
+		<properties:do_not_hurt rdf:resource="http://www.example.com/base#Cerb%C3%A8re"/>
 	</classes:Goal>
 
-	<classes:Magical_beast rdf:about="Cerbère">
+	<classes:Magical_beast rdf:about="Cerb%C3%A8re">
 		<foaf:name>Cerbère</foaf:name>
 		<properties:number_of_head>3</properties:number_of_head>
 		<properties:son_of rdf:resource="http://www.example.com/base#Hades"/>
@@ -39,8 +40,8 @@
 		<properties:composed_of>
 			<rdf:Bag>
 				<rdf:li rdf:resource="http://www.example.com/properties#Va_en_enfer"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Parle_à_Hades"/>
-				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerbère"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Parle_%C3%A0_Hades"/>
+				<rdf:li rdf:resource="http://www.example.com/properties#Dompte_Cerb%C3%A8re"/>
 			</rdf:Bag>
 		</properties:composed_of>
 	</classes:Taks_steps>
